@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#9999cc"
+    android:orientation="vertical" >
+	<TextView 
+        android:id="@+id/tv_list_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:gravity="right"
+        android:minHeight="40dp"
+        android:minWidth="120dp"
+        android:textSize="50sp"
+        android:textColor="#ff777777"
+        android:text="完成操作"
+        />
+    
+    
+
+</LinearLayout>

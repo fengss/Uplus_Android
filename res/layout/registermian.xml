@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity" 
+    android:background="#ffe0e0e0"
+    >
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="68.0dip"
+            android:layout_height="68.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="83.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_default_avatar" />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            >
+            
+            <LinearLayout 
+                android:id="@+id/register_input_account"
+				android:orientation="horizontal"
+				android:layout_alignParentTop="true"
+				android:layout_centerInParent="true"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/input_frame"
+				android:layout_marginTop="40dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号:"
+                    />
+                
+                <EditText 
+                    android:id="@+id/register_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="请输入账号"
+                    android:text=""
+                    />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:id="@+id/register_input_password"
+				android:orientation="horizontal"
+				android:layout_centerInParent="true"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@drawable/input_frame"
+				android:layout_marginTop="-2dp"
+				android:layout_below="@id/register_input_account"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码:"
+                    />
+                
+                <EditText 
+                    android:id="@+id/register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="#ff333333"
+                    android:hint="请输入密码"
+                    android:text=""
+                    android:password="true"
+                    />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:id="@+id/register_input"
+				android:orientation="horizontal"
+				android:layout_centerInParent="true"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_below="@id/register_input_password"
+                >
+                <Button 
+                    android:id="@+id/input_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="注册"
+                    android:onClick="login"
+                    />
+                
+            </LinearLayout>
+
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+</FrameLayout>

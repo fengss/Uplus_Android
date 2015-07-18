@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <PreferenceCategory
+        android:orderingFromXml="true"
+        android:title="基础" >
+        <cn.coderss.util.CustomSwitchPreference
+            android:key="avator"
+            
+            android:summaryOff="开启"
+            android:summaryOn="关闭"
+            android:title="默认头像" />
+        <cn.coderss.util.CustomSwitchPreference
+            
+            android:key="offline"
+            android:summary="lx"
+            android:summaryOff="开启"
+            android:summaryOn="关闭"
+            android:title="显示离线好友" />
+
+        <cn.coderss.util.CustomSwitchPreference
+            
+            android:key="music"
+            android:summary="mu"
+            android:summaryOff="开启"
+            android:summaryOn="关闭"
+            android:title="静音模式" />
+        
+        <cn.coderss.util.CustomSwitchPreference
+            
+            android:key="cl"
+            android:summary="cl"
+            android:summaryOff="开启"
+            android:summaryOn="关闭"
+            android:title="断线重连" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:orderingFromXml="true"
+        android:title="其他" >
+        
+        <PreferenceScreen
+            android:key="reply"
+            android:title="反馈" >
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="about"
+            android:title="关于" >
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

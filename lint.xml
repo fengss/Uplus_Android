@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="CommitTransaction">
+        <ignore path="src/cn/coderss/activity/MainActivity.java" />
+    </issue>
+</lint>

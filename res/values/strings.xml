@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="app_name" translatable="false">至友</string>
+    <string name="app_title_name" translatable="false">至友寻觅-亲密无间</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="action_settings" translatable="false">设置</string>
+    <string name="tab_qq" translatable="false">QQ聊天界面</string>
+    <string name="tab_wechat" translatable="false">微信聊天界面</string>
+    <string name="tab_friend" translatable="false">朋友圈</string>
+
+    <!-- 状态 -->
+    <string name="status_available" translatable="false">在线</string>
+    <string name="status_away" translatable="false">离开</string>
+    <string name="status_chat" translatable="false">Q我吧</string>
+    <string name="status_dnd" translatable="false">请勿打扰</string>
+    <string name="status_xa" translatable="false">隐身</string>
+    <string name="status_offline" translatable="false">离线</string>
+    <string name="status_busy" translatable="false">忙碌</string>
+    <string name="status_online" translatable="false">在线</string>
+    <string name="hide_login" translatable="false">隐身登录</string>
+    <string name="info_accounts" translatable="false">使用TLS加密</string>
+    <string name="silence_login" translatable="false">静音模式</string>
+
+    <!-- 系统应用 -->
+    <string name="run_bg_ticker" translatable="false">至友 后台运行</string>
+
+    <!-- listview 刷新 -->
+    <string name="pull_to_refresh" translatable="false">下拉可以刷新</string>
+    <string name="release_to_refresh" translatable="false">释放立即刷新</string>
+    <string name="refreshing" translatable="false">正在刷新…</string>
+    <string name="not_updated_yet" translatable="false">暂未更新过</string>
+    <string name="updated_at" translatable="false">上次更新于%1$s前</string>
+    <string name="updated_just_now" translatable="false">刚刚更新</string>
+    <string name="time_error" translatable="false">时间有问题</string>
+
+</resources>

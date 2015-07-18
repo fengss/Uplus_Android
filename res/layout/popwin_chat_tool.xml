@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="176dp"
+    android:background="@drawable/chat_bubble_banner_bg_bottom"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="88dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	
+	        <ImageButton
+	            android:id="@+id/btn_take_picture"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:background="@drawable/chat_tool_camera"
+	            android:gravity="center_horizontal"
+	            android:scaleType="fitCenter" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="照相"
+	            />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="88dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:layout_margin="5dp"
+	        android:orientation="vertical" >
+	
+	        <ImageButton
+	            android:id="@+id/btn_video_make"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:background="@drawable/chat_tool_video"
+	            android:gravity="center_horizontal"
+	            android:scaleType="fitCenter" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="录像"
+	            />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="88dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	
+	        <ImageButton
+	            android:id="@+id/btn_photo_choice"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:background="@drawable/chat_tool_photo"
+	            android:gravity="center_horizontal"
+	            android:scaleType="fitCenter" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="图片"
+	            />
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="88dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	
+	        <ImageButton
+	            android:id="@+id/btn_file"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:background="@drawable/chat_tool_send_file"
+	            android:gravity="center_horizontal"
+	            android:scaleType="fitCenter" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="文件"
+	            />
+	    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="88dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:padding="5dp"
+	        android:orientation="vertical" >
+	
+	        <ImageButton
+	            android:id="@+id/btn_location"
+	            android:layout_width="60dp"
+	            android:layout_height="60dp"
+	            android:background="@drawable/chat_tool_location"
+	            android:gravity="center_horizontal"
+	            android:scaleType="fitCenter" />
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:text="位置"
+	            />
+	    </LinearLayout>
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        />
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        />
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        />
+	    
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<Spinner android:id="@+id/groupspinner" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp">
+	</Spinner>
+	<EditText
+		android:id="@+id/newgroupinput"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:visible="false"
+		android:enabled="false"
+		android:singleLine="true"
+		android:hint="新分组名称"
+		/>
+</merge>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" >
+		<RelativeLayout 
+		    android:id="@+id/msg_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="bottom"
+            android:layout_marginBottom="50.0dip"
+		    
+		    >
+		    
+		     <cn.coderss.xlistview.MsgListView
+            android:id="@+id/msg_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:divider="@null"
+            android:listSelector="#00000000"
+            android:transcriptMode="normal" />
+		</RelativeLayout>
+       
+        <RelativeLayout
+            android:id="@+id/inputBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/webviewtab_bg" >
+            
+            <LinearLayout
+                android:id="@+id/lbtn"
+                android:layout_width="60dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="3dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/msglist_input_send"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/btn_chat_send"
+                    android:text="发送"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnSpeak"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_bg_black_2"
+                    android:src="@drawable/chat_mic" />
+
+                <ImageButton
+                    android:id="@+id/imgBtnKeybox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_bg_black_2"
+                    android:src="@drawable/btn_chat_keybox"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/chat_expression"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:padding="0.5dp"
+                android:src="@drawable/skin_face" />
+
+            <ImageView
+                android:id="@+id/chat_tool"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:layout_toRightOf="@+id/chat_expression"
+                android:padding="0.5dp"
+                android:src="@drawable/btn_add" />
+
+            <EditText
+                android:id="@+id/msglist_input_chatmsg"
+                android:layout_width="190dip"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/lbtn"
+                android:layout_toRightOf="@id/chat_tool"
+                android:background="@drawable/chat_text_button_selector"
+                android:textSize="18sp" >
+
+                <requestFocus />
+            </EditText>
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="190dip"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/lbtn"
+                android:layout_toRightOf="@id/chat_expression"
+                android:background="@drawable/btn_chat_speak"
+                android:gravity="center"
+                android:text="按住说话"
+                android:visibility="gone" />
+        </RelativeLayout>
+		
+		<LinearLayout
+		    android:id="@+id/layout_bottom"
+		    android:layout_alignParentBottom="true"
+		    android:layout_height="0dp"
+		    android:layout_width="0dp"
+		    android:orientation="horizontal"
+		    ></LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="132dp"
+	    android:background="@drawable/friend_infos_item_bg"
+	    android:orientation="vertical"
+	    android:padding="5dp" >
+
+		<EditText
+		    android:id="@+id/friend_msg"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:ems="10"
+		    android:hint="请填写你的心情"
+		    android:textSize="20dp" >
+
+		    <requestFocus />
+		</EditText>
+	    <Button
+	        android:id="@+id/friend_photo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true"
+	        android:gravity="center"
+	        android:text="附图"
+	        android:textSize="20dp" />
+	    <ImageView 
+	        android:id="@+id/friend_pic"
+	        android:layout_width="180dp"
+	        android:layout_height="80dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerInParent="true"
+	        />
+
+	    <Button
+	        android:id="@+id/friend_send"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发送"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentBottom="true"
+	        android:textSize="20dp" />
+
+	</RelativeLayout>
+    <cn.coderss.xlistview.XListView
+        android:id="@+id/xlistview_list"
+        android:scrollbars="vertical"
+         android:fastScrollEnabled="true"
+         android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
