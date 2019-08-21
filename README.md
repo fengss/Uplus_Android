@@ -1,20 +1,25 @@
 # Uplus_Android
-uplus的android版!用java的ssh框架写出一套即时通讯web应用 基本也有朋友圈的小功能,而android端就是这个,2014年作品
 
-#此app 是基于现即时通讯软件流行的xmpp协议
+uplus的android版!用java的ssh框架写出一套即时通讯web应用 基本也有朋友圈的小功能,而android端就是这个,2014年练习作品
+
+此app是基于现即时通讯软件流行的xmpp协议
 
 ## xmpp+asmack+openfire
 
 服务器在web端开放了9090以供web后台使用
 
 ![image](https://github.com/fengss/Uplus_Android/blob/master/img/1.jpg?raw=true)
+
 <br/>
+
 ![image](https://github.com/fengss/Uplus_Android/blob/master/img/2.jpg?raw=true)
 
 #接下来介绍整个app构架
 
 <br/>
+
 ![image](https://github.com/fengss/Uplus_Android/blob/master/img/3.jpg?raw=true)
+
 我先排除掉不介绍的二次开发的ui
 
 - xlistview：
@@ -100,22 +105,42 @@ app上各个主要的activity，主要如:login,register,main(联系人界面,�
 主要写一些基于smack定义的方法全都写了一遍，然后service定义与activity线程代码执行完后的反馈
 
 
-ui包：
+- ui包
 
 接下来的ui是一些小改动的ui不介绍
 
-util：
+- util：
 
 处理一些时间戳和preferenceconstants的工具和字段
 
  
-![image](https://github.com/fengss/Uplus_Android/blob/master/img/4.jpg?raw=true)<br/>
-![image](https://github.com/fengss/Uplus_Android/blob/master/img/5.jpg?raw=true)<br/>
-![image](https://github.com/fengss/Uplus_Android/blob/master/img/6.jpg?raw=true)<br/>
-![image](https://github.com/fengss/Uplus_Android/blob/master/img/7.jpg?raw=true)<br/>
-![image](https://github.com/fengss/Uplus_Android/blob/master/img/8.jpg?raw=true)<br/>
-![image](https://github.com/fengss/Uplus_Android/blob/master/img/9.jpg?raw=true)<br/>
-![image](https://github.com/fengss/Uplus_Android/blob/master/img/10.jpg?raw=true)<br/>
+![image](https://github.com/fengss/Uplus_Android/blob/master/img/4.jpg?raw=true)
+
+<br/>
+
+![image](https://github.com/fengss/Uplus_Android/blob/master/img/5.jpg?raw=true)
+
+<br/>
+
+![image](https://github.com/fengss/Uplus_Android/blob/master/img/6.jpg?raw=true)
+
+<br/>
+
+![image](https://github.com/fengss/Uplus_Android/blob/master/img/7.jpg?raw=true)
+
+<br/>
+
+![image](https://github.com/fengss/Uplus_Android/blob/master/img/8.jpg?raw=true)
+
+<br/>
+
+![image](https://github.com/fengss/Uplus_Android/blob/master/img/9.jpg?raw=true)
+
+<br/>
+
+![image](https://github.com/fengss/Uplus_Android/blob/master/img/10.jpg?raw=true)
+
+<br/>
 
 
 ## 所遇到的困惑
