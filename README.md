@@ -3,7 +3,7 @@ uplus的android版!用java的ssh框架写出一套即时通讯web应用 基本�
 
 #此app 是基于现即时通讯软件流行的xmpp协议
 
-##所用了xmpp+asmack+openfire
+## xmpp+asmack+openfire
 
 服务器在web端开放了9090以供web后台使用
 
@@ -17,27 +17,27 @@ uplus的android版!用java的ssh框架写出一套即时通讯web应用 基本�
 ![image](https://github.com/fengss/Uplus_Android/blob/master/img/3.jpg?raw=true)
 我先排除掉不介绍的二次开发的ui
 
-xlistview：
+- xlistview：
 
 里面有listhead和listfoot还有聊天窗口的listview和朋友圈的listview，主要用来下拉刷新下来加载更多
 
-pulltorefresh：
+- pulltorefresh：
 
 这个是用于联系人列表的刷新
 
-iphoneiphonetreeview:
+- iphoneiphonetreeview:
 
 继承了ExpandableListView主要用于负责联系人组和联系人的数据
 
-quickaction:
+- quickaction:
 
 集合popupwindow的弹窗
 
-waterfall:
+- waterfall:
 
 用于朋友圈的弹窗
 
-image_friend和model_friend:
+- image_friend和model_friend:
 
 用户朋友圈的数据获取和图片缓存本地
 
@@ -47,33 +47,33 @@ image_friend和model_friend:
 
 接下来主要介绍重点包
 
-activity:
+- activity
 
 app上各个主要的activity，主要如:login,register,main(联系人界面,会话窗口),chat,friend(朋友圈界面),set(设置界面),rote(百度地图)
 
 附带一个baseactivity
 
-adapter:
+- adapter
 
 这个包里面主要有，联系人的adapter,聊天数据的adapter,会话窗口adapter还有一个朋友圈adapter
 
-baidubls:
+- baidubls
 
 主要放一些百度地图api御用的activity
 
-db:
+- db
 
 两个provider,一个是聊天的数据一个是联系人数据，朋友圈有待加入sqlite本地数据库，联系人一旦更新会notifyChange
 
 联系人的数据库在mainactivity注册ContentObserver处理代码
 
-fragment:
+- fragment
 
 主要用于mainactivity下的一些分界面
 
 比如联系人fragment，会话窗口fragment
 
-receiver:
+- receiver
 
 主要放的广播接收是网络改变和关机
 
@@ -81,7 +81,7 @@ receiver:
 
 关机则停止后台服务
 
-smack:
+- smack
 
 这个主要asmack的jar后续写自己合适的方法
 
@@ -95,7 +95,7 @@ smack:
 
 新消息和发送消息的处理还有联系人的处理都会写入sqlite
 
-service:
+- service:
 
 主要写一些基于smack定义的方法全都写了一遍，然后service定义与activity线程代码执行完后的反馈
 
@@ -118,7 +118,7 @@ util：
 ![image](https://github.com/fengss/Uplus_Android/blob/master/img/10.jpg?raw=true)<br/>
 
 
-##所遇到的困惑
+## 所遇到的困惑
 
 我在处理语音通话的时候也想到了sip的sipboard
 
@@ -130,19 +130,28 @@ util：
 
 但是状态一直阻塞在 negotiating stream
 
-看了好多资料说改写org.jivesoftware.smackx.filetransfer.Socks5TransferNegotiator.discoverLocalIP()方法，我的是asmack-android-6-0.8.1.1.jar根本没有这个玩意
+看了好多资料说改写`org.jivesoftware.smackx.filetransfer.Socks5TransferNegotiator.discoverLocalIP()`方法
 
-又看到说改写createIncomingStream，可是改写还是木有用啊！
+我的是`asmack-android-6-0.8.1.1.jar`根本没有这个玩意
+
+又看到说改写`createIncomingStream`,可是改写还是没有用啊！
 
 我无奈只好写了http协议上传
 
-我的想法是这样，按下激发录音，ontouch抬起松开，创建发送文件的线程，然后sendPacket，http链接，用户在注册监听新消息的代码处理语音特殊的链接，下载然后cache到本地，并且路径写入sqlite，chat界面的simplecursoradapter的getview如果是链接则会speek播放本地的speek编码文件
+我的想法是这样，按下激发录音,`ontouch`抬起松开创建发送文件的线程,然后`sendPacket`
 
-参照好多大牛说改写org.jivesoftware.smackx.filetransfer.Socks5TransferNegotiator.discoverLocalIP()方法。尼玛我搞的源码的Socks5TransferNegotiator这个类里根本没有discoverLocalIP()方法!
+`http`链接，用户在注册监听新消息的代码处理语音特殊的链接,下载然后cache到本地,并且路径写入sqlite，chat界面的`simplecursoradapter`的`getview`
+
+如果是链接则会speek播放本地的speek编码文件
+
+参照好多大牛说改写`org.jivesoftware.smackx.filetransfer.Socks5TransferNegotiator.discoverLocalIP()`方法。
+
+我搞的源码的`Socks5TransferNegotiato`r这个类里根本没有`discoverLocalIP()`方法!
 
 
 
-接下来是web端，采用了php的thinkphp框架，写的很简单
+接下来是web端，采用了php的thinkphp框架  
+
 ![image](https://github.com/fengss/Uplus_Android/blob/master/img/11.jpg?raw=true)<br/>
 
 
